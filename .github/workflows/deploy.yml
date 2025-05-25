@@ -1,3 +1,4 @@
+# Note: workflows (plural) not workflow
 name: Deploy to GitHub Pages
 
 on:
@@ -8,6 +9,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,5 +29,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
           folder: dist
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
