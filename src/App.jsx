@@ -6,15 +6,13 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import ThemeToggle from './components/darkMode'
 
 function App() {
 
   return (
     <>
-      <div className='dark:bg-gray-50 transition-colors duration-300'>
+       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Navbar/>
-        <ThemeToggle/>
         <main className='container mx-auto px-4'>
           <Hero/>
           <About/>
