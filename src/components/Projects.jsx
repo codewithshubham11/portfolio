@@ -19,10 +19,24 @@ const Projects = () => {
       githubLink: "https://github.com/codewithshubham11/textutilis"
     },
     {
+      title: "Portfolio",
+      description: "My personal portfolio website showcasing my projects and skills.",
+      technologies: ["React", "JavaScript", "Tailwind CSS"],
+      image: "./image/portfolioimage.jpg",
+      liveLink: "https://codewithshubham11.github.io/portfolio/",
+      githubLink: "https://github.com/codewithshubham11/portfolio"
+    },
+    {
       title: "NewsApp",
       description: "NewsApp - React Web Application.",
       technologies: ["Javascript", "React", "REST API", "Bootstrap", "GitVersion Control"],
       image: "./image/newsapp.jpeg",
+    },
+     {
+      title: "Sportify",
+      description: "Sportify - React Web Application.",
+      technologies: ["HTML,CSS,Jvascript"],
+      image: "./image/spotify.png",
     },
     // Add more projects
   ]
